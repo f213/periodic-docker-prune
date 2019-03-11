@@ -17,15 +17,19 @@ So this image is designed for running with zero host configuration.
 version: '3.6'
 
 services:
-    periodic-prune:
-        image: f213/periodic-docker-prune
+  periodic-prune:
+    image: f213/periodic-docker-prune
         
-        # may be omitted, 05:24 by default
-        environment:
-            AT: '05:44'
+    # may be omitted, 05:24 by default
+    environment:
+      AT: '05:44'
 
-        deployment:
-            mode: global
+    deploy:
+      mode: global
+      
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      
 ```
 
 ## Manual
