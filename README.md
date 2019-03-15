@@ -17,7 +17,7 @@ version: '3.6'
 
 services:
   periodic-prune:
-    image: f213/periodic-docker-prune:1.0.0
+    image: f213/periodic-docker-prune:1.1.0
         
     # may be omitted, 05:24 by default
     environment:
