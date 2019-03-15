@@ -4,12 +4,11 @@
 
 
 ## The problem
-When running a swarm, periodicaly updating service images, each work holds stale versions of this images, taking space.
+When running a swarm, periodicaly updating service images, each worker node starts to hold stale versions of old images, taking disk space.
 
-Common solution is to run `docker prune` in the crontab, but we do not want to configure our workers besides joining to the swarm, aren't
-we?
+Common solution is to run `docker prune` via cron, but we do not want to configure our workers besides joining to the swarm, aren't we?
 
-So this image is designed for running with zero host configuration.
+So this image is designed for running periodic system clean with zero host configuration.
 
 ## Swarm
 
@@ -18,11 +17,11 @@ version: '3.6'
 
 services:
   periodic-prune:
-    image: f213/periodic-docker-prune
+    image: f213/periodic-docker-prune:1.0.0
         
     # may be omitted, 05:24 by default
     environment:
-      AT: '05:44'
+      AT: '02:44'
 
     deploy:
       mode: global
