@@ -34,5 +34,5 @@ services:
 ## Manual
 
 ```sh
-$ docker run -ti -v "/var/run/docker.sock:/var/run/docker.sock" -e AT='17:20' f213/periodic-docker-prune
+$ docker run -v "/var/run/docker.sock:/var/run/docker.sock" -e AT='17:20' f213/periodic-docker-prune
 ```
