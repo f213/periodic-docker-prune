@@ -1,5 +1,8 @@
 # Periodic docker prune
 
+[![](https://images.microbadger.com/badges/image/f213/periodic-docker-prune.svg)](https://microbadger.com/images/f213/periodic-docker-prune "Get your own image badge on microbadger.com")
+![](https://img.shields.io/docker/cloud/automated/f213/periodic-docker-prune.svg)
+
 ![head](https://user-images.githubusercontent.com/1592663/54130596-b737ae80-4421-11e9-9b89-aa8b8da06dd7.jpg)
 
 
