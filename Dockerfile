@@ -8,7 +8,7 @@ RUN wget https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKER_
     rm -Rf docker-${DOCKER_VERSION}.tgz
 
 ADD requirements.txt /
-RUN pip install -r /requirements.txt
+RUN pip install --no-cache-dir -r /requirements.txt
 
 ADD entrypoint.py /
 ENTRYPOINT python /entrypoint.py
