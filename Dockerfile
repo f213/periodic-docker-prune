@@ -1,5 +1,5 @@
-FROM python:3.6-alpine
-ENV DOCKER_VERSION=18.09.3
+FROM python:3.13-alpine
+ENV DOCKER_VERSION=29.3.1
 
 RUN wget https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKER_VERSION}.tgz && \
     tar zxpvf docker-${DOCKER_VERSION}.tgz && \
