@@ -41,6 +41,8 @@ def prune():
 if __name__ == '__main__':
     validate_socket()
 
+    prune()
+
     at = env('AT', default='05:44')
     print(f'Scheduling periodic prune at {at}...')
 
